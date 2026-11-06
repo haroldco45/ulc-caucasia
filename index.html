@@ -7,19 +7,19 @@
 <meta name="description" content="Inglés por niveles A1, A2, B1 y B2 para niños, jóvenes y adultos. Clases virtuales y presenciales en Caucasia, El Bagre y Montelíbano. Descuento especial ExpoCaucasia 2026.">
 <meta name="theme-color" content="#16267a">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon-192.png">
+<link rel="icon" href="icon-192.png" type="image/png">
 <link rel="apple-touch-icon" href="icon-192.png">
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ulc-de-caucasia.netlify.app/">
 <meta property="og:title" content="ULC Corporation — Aprenda Inglés en Caucasia">
 <meta property="og:description" content="Inglés A1 a B2, virtual y presencial, para niños, jóvenes y adultos. Descuento especial ExpoCaucasia 2026.">
-<meta property="og:image" content="https://ulc-de-caucasia.netlify.app/og-ulc.jpg">
+<meta property="og:image" content="https://ulc-de-caucasia.netlify.app/og-ulc-v2.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ULC Corporation — Aprenda Inglés en Caucasia">
 <meta name="twitter:description" content="Inglés A1 a B2, virtual y presencial. Descuento especial ExpoCaucasia 2026.">
-<meta name="twitter:image" content="https://ulc-de-caucasia.netlify.app/og-ulc.jpg">
-<meta property="og:image:secure_url" content="https://ulc-de-caucasia.netlify.app/og-ulc.jpg">
+<meta name="twitter:image" content="https://ulc-de-caucasia.netlify.app/og-ulc-v2.jpg">
+<meta property="og:image:secure_url" content="https://ulc-de-caucasia.netlify.app/og-ulc-v2.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:alt" content="ULC Corporation — Aprenda Inglés A1 a B2 en Caucasia">
 <meta property="og:site_name" content="ULC Corporation">
@@ -38,7 +38,7 @@ a{color:inherit}
 .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 /* barra superior */
 .top{position:sticky;top:0;z-index:50;background:rgba(22,38,122,.96);backdrop-filter:blur(8px);color:#fff}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .marca{font-family:'Barlow Condensed';font-weight:800;font-size:22px;letter-spacing:1px}
 .marca span{color:var(--rojo2)}
 .idioma{display:flex;border:2px solid #fff;border-radius:30px;overflow:hidden}
@@ -56,6 +56,9 @@ a{color:inherit}
 .hero .wrap{position:relative;z-index:2;padding-bottom:48px;padding-top:120px}
 .chip{display:inline-block;background:var(--rojo);padding:6px 14px;border-radius:30px;font-weight:800;font-size:13px;letter-spacing:1px;text-transform:uppercase;animation:late 2s infinite}
 @keyframes late{50%{box-shadow:0 0 0 10px rgba(214,32,45,0)}0%{box-shadow:0 0 0 0 rgba(214,32,45,.7)}}
+.logo-hero{display:inline-block;background:#fff;border-radius:22px;padding:14px 20px;margin-bottom:18px;box-shadow:0 14px 40px rgba(0,0,0,.35);animation:flota 4s ease-in-out infinite}
+.logo-hero img{display:block;height:130px;width:auto}
+@keyframes flota{50%{transform:translateY(-6px)}}
 .hero h1{font-family:'Barlow Condensed';font-size:clamp(44px,11vw,96px);line-height:.92;margin:16px 0 10px;text-transform:uppercase}
 .hero h1 em{font-style:normal;color:var(--rojo2);display:block}
 .hero p{font-size:19px;max-width:560px;opacity:.95}
@@ -167,7 +170,7 @@ footer b{color:#fff}
 
 <header class="top">
   <div class="wrap">
-    <div class="marca">ULC <span>CORPORATION</span></div>
+    <a href="#" class="marca" aria-label="ULC Corporation"><img src="logo-ulc-blanco.png" alt="ULC Corporation" height="46" style="display:block;height:46px;width:auto"></a>
     <div class="idioma"><button data-l="es" class="on">ES</button><button data-l="en">EN</button></div>
   </div>
 </header>
@@ -176,6 +179,7 @@ footer b{color:#fff}
 <section class="hero" style="padding:0">
   <div class="foto"></div>
   <div class="wrap">
+    <div class="logo-hero"><img src="logo-ulc.png" alt="ULC Corporation — The best choice to learn English"></div>
     <span class="chip" data-t="chip">ExpoCaucasia 2026 · Descuento especial</span>
     <h1><span data-t="h1a">Aprenda</span> <em data-t="h1b">Inglés</em></h1>
     <p data-t="hero">Método práctico, vivencial y conversacional bajo el Marco Común Europeo. Clases virtuales y presenciales para niños, jóvenes y adultos.</p>
@@ -305,7 +309,7 @@ footer b{color:#fff}
 </section>
 
 <footer>
-  <p><b>ULC Corporation</b> — The best choice to learn English</p>
+  <img src="logo-ulc-blanco.png" alt="ULC Corporation" style="height:110px;width:auto;margin-bottom:10px"><p><b>ULC Corporation</b> — The best choice to learn English</p>
   <p style="margin-top:10px">Desarrollada por <b>Vibras Positivas HM</b> — Derechos de Autor Reservados · 311 770 0431</p>
 </footer>
 
