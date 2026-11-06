@@ -9,6 +9,6 @@ App (PWA) bilingüe (ES/EN) para ULC Corporation, academia de inglés con sedes 
 - Sedes con WhatsApp directo
 - Instalable (manifest + service worker)
 
-URL: https://ulc-caucasia.netlify.app
+URL: https://ulc-de-caucasia.netlify.app
 
 Desarrollada por **Vibras Positivas HM** — Derechos de Autor Reservados.
