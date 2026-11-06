@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ULC Corporation — Aprenda Inglés en Caucasia</title>
+<meta name="description" content="Inglés por niveles A1, A2, B1 y B2 para niños, jóvenes y adultos. Clases virtuales y presenciales en Caucasia, El Bagre y Montelíbano. Descuento especial ExpoCaucasia 2026.">
+<meta name="theme-color" content="#16267a">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ulc-caucasia.netlify.app/">
+<meta property="og:title" content="ULC Corporation — Aprenda Inglés en Caucasia">
+<meta property="og:description" content="Inglés A1 a B2, virtual y presencial, para niños, jóvenes y adultos. Descuento especial ExpoCaucasia 2026.">
+<meta property="og:image" content="https://ulc-caucasia.netlify.app/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ULC Corporation — Aprenda Inglés en Caucasia">
+<meta name="twitter:description" content="Inglés A1 a B2, virtual y presencial. Descuento especial ExpoCaucasia 2026.">
+<meta name="twitter:image" content="https://ulc-caucasia.netlify.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800;900&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#16267a;--azul2:#1f3bb3;--rojo:#d6202d;--rojo2:#ff4d5a;--blanco:#fff;--gris:#f2f4fb;--texto:#141a33}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Barlow,system-ui,sans-serif;color:var(--texto);background:var(--blanco);overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+/* barra superior */
+.top{position:sticky;top:0;z-index:50;background:rgba(22,38,122,.96);backdrop-filter:blur(8px);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.marca{font-family:'Barlow Condensed';font-weight:800;font-size:22px;letter-spacing:1px}
+.marca span{color:var(--rojo2)}
+.idioma{display:flex;border:2px solid #fff;border-radius:30px;overflow:hidden}
+.idioma button{background:none;border:0;color:#fff;font:700 14px Barlow;padding:6px 14px;cursor:pointer}
+.idioma button.on{background:#fff;color:var(--azul)}
+/* cinta expo */
+.cinta{background:var(--rojo);color:#fff;overflow:hidden;white-space:nowrap;font-weight:800;font-size:15px;letter-spacing:.5px}
+.cinta div{display:inline-block;padding:9px 0;animation:corre 22s linear infinite}
+@keyframes corre{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero .foto{position:absolute;inset:0;background:url(estudiantes.jpg) center/cover;animation:zoom 18s ease-in-out infinite alternate}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.12) translateX(-2%)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,38,122,.15) 0%,rgba(22,38,122,.75) 55%,rgba(22,38,122,.98) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:48px;padding-top:120px}
+.chip{display:inline-block;background:var(--rojo);padding:6px 14px;border-radius:30px;font-weight:800;font-size:13px;letter-spacing:1px;text-transform:uppercase;animation:late 2s infinite}
+@keyframes late{50%{box-shadow:0 0 0 10px rgba(214,32,45,0)}0%{box-shadow:0 0 0 0 rgba(214,32,45,.7)}}
+.hero h1{font-family:'Barlow Condensed';font-size:clamp(44px,11vw,96px);line-height:.92;margin:16px 0 10px;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--rojo2);display:block}
+.hero p{font-size:19px;max-width:560px;opacity:.95}
+.botones{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-block;padding:15px 26px;border-radius:12px;font-weight:800;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s}
+.btn:active{transform:scale(.96)}
+.btn.rojo{background:var(--rojo);color:#fff;box-shadow:0 8px 24px rgba(214,32,45,.45)}
+.btn.blanco{background:#fff;color:var(--azul)}
+.btn.borde{background:transparent;color:#fff;border:2px solid #fff}
+/* cifras */
+.cifras{background:var(--azul);color:#fff}
+.cifras .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:26px 20px;text-align:center}
+.cifras b{display:block;font-family:'Barlow Condensed';font-size:40px;color:var(--rojo2)}
+.cifras small{font-size:13px;opacity:.85}
+section{padding:64px 0}
+.titulo{font-family:'Barlow Condensed';font-size:clamp(32px,7vw,52px);text-transform:uppercase;line-height:1;color:var(--azul)}
+.titulo span+span{color:var(--rojo)}
+.sub{font-size:18px;margin:10px 0 30px;color:#45507a;max-width:640px}
+/* método */
+.metodo{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.met{background:var(--gris);border-radius:18px;padding:24px;border-top:6px solid var(--rojo);transition:transform .3s}
+.met:hover{transform:translateY(-6px)}
+.met .n{font-family:'Barlow Condensed';font-size:46px;color:var(--azul2);opacity:.35;line-height:1}
+.met h3{font-size:22px;margin:6px 0;color:var(--azul)}
+/* niveles */
+.niveles-bg{background:linear-gradient(135deg,var(--azul) 0%,var(--azul2) 100%);color:#fff}
+.niveles-bg .titulo{color:#fff}
+.niveles-bg .sub{color:#d6dcff}
+.tabs{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.tabs button{flex:1;min-width:70px;padding:16px 8px;border-radius:14px;border:2px solid rgba(255,255,255,.4);background:transparent;color:#fff;font:800 26px 'Barlow Condensed';cursor:pointer;transition:.25s}
+.tabs button.on{background:var(--rojo);border-color:var(--rojo);transform:translateY(-4px)}
+.nivel-box{background:rgba(255,255,255,.1);border-radius:18px;padding:26px;min-height:200px}
+.nivel-box h3{font-size:26px;margin-bottom:8px}
+.barra{height:10px;background:rgba(255,255,255,.2);border-radius:10px;margin:16px 0;overflow:hidden}
+.barra i{display:block;height:100%;background:var(--rojo2);border-radius:10px;transition:width .8s cubic-bezier(.2,.8,.2,1)}
+.nivel-box ul{list-style:none;display:grid;gap:8px;margin-top:10px}
+.nivel-box li{padding-left:18px;position:relative}
+.nivel-box li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:var(--rojo2)}
+/* servicios */
+.serv{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.sv{border-radius:18px;padding:26px;color:#fff;position:relative;overflow:hidden;min-height:170px;display:flex;flex-direction:column;justify-content:flex-end}
+.sv:nth-child(1){background:var(--azul)}
+.sv:nth-child(2){background:var(--rojo)}
+.sv:nth-child(3){background:var(--rojo)}
+.sv:nth-child(4){background:var(--azul)}
+.sv h3{font-size:23px}
+.sv::before{content:attr(data-k);position:absolute;right:-6px;top:-18px;font:800 110px 'Barlow Condensed';opacity:.13}
+/* modalidad */
+.modal-sw{display:flex;background:var(--gris);border-radius:40px;padding:6px;max-width:420px;margin-bottom:20px}
+.modal-sw button{flex:1;padding:12px;border:0;border-radius:40px;background:none;font:800 16px Barlow;cursor:pointer;color:var(--azul)}
+.modal-sw button.on{background:var(--azul);color:#fff}
+.modal-txt{font-size:18px;background:var(--gris);border-left:6px solid var(--rojo);border-radius:12px;padding:20px;max-width:700px}
+/* test */
+.test{background:var(--gris)}
+.card-test{background:#fff;border-radius:20px;padding:26px;box-shadow:0 14px 40px rgba(22,38,122,.12);max-width:680px}
+.prog{height:8px;background:#e3e7f5;border-radius:8px;margin-bottom:18px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--rojo);transition:width .4s}
+.preg{font-size:22px;font-weight:800;color:var(--azul);margin-bottom:16px}
+.ops{display:grid;gap:10px}
+.ops button{text-align:left;padding:15px 18px;border-radius:12px;border:2px solid #dfe3f2;background:#fff;font:600 17px Barlow;cursor:pointer;transition:.2s}
+.ops button:hover{border-color:var(--azul2)}
+.ops button.ok{background:#e6f6ea;border-color:#2e9b4f}
+.ops button.mal{background:#fde8ea;border-color:var(--rojo)}
+.resultado{text-align:center}
+.resultado .big{font:800 90px 'Barlow Condensed';color:var(--rojo);line-height:1}
+/* galería */
+.galeria{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:center}
+.galeria img{width:100%;border-radius:18px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+.volante{transform:rotate(-2deg);transition:transform .4s}
+.volante:hover{transform:rotate(0) scale(1.02)}
+/* inscripción */
+.form{display:grid;gap:12px;max-width:620px}
+.form label{font-weight:700;font-size:14px;color:var(--azul)}
+.form input,.form select,.form textarea{width:100%;padding:14px;border-radius:12px;border:2px solid #dfe3f2;font:16px Barlow;margin-top:4px}
+.form input:focus,.form select:focus{outline:none;border-color:var(--azul2)}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.habeas{font-size:13px;color:#555;background:var(--gris);padding:12px;border-radius:10px}
+.habeas input{width:auto;margin-right:6px}
+/* sedes */
+.sedes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sede{border-radius:18px;padding:24px;background:#fff;border:2px solid #e6e9f5;transition:.3s}
+.sede:hover{border-color:var(--rojo);transform:translateY(-4px)}
+.sede h3{font-family:'Barlow Condensed';font-size:28px;color:var(--azul);text-transform:uppercase}
+.sede p{margin:6px 0 14px;color:#45507a}
+.sede .btn{padding:12px 18px;font-size:15px}
+.estado{display:inline-block;font-size:12px;font-weight:800;padding:4px 10px;border-radius:20px;margin-bottom:8px}
+.abierto{background:#e6f6ea;color:#1d7a3a}.cerrado{background:#eee;color:#666}
+/* cta final */
+.cta{background:var(--rojo);color:#fff;text-align:center}
+.cta .titulo{color:#fff}
+.cta .reloj{font:800 20px Barlow;opacity:.9;margin-top:6px}
+footer{background:#0d1650;color:#c8cff5;text-align:center;padding:28px 20px;font-size:14px}
+footer b{color:#fff}
+.flotante{position:fixed;right:16px;bottom:16px;z-index:60;background:#25d366;color:#fff;font-weight:800;padding:14px 20px;border-radius:40px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.3);animation:sube 2.5s ease-in-out infinite}
+@keyframes sube{50%{transform:translateY(-5px)}}
+#instalar{display:none}
+.rev{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
+.rev.vis{opacity:1;transform:none}
+@media(max-width:760px){
+ .cifras .wrap{grid-template-columns:repeat(2,1fr)}
+ .metodo,.sedes{grid-template-columns:1fr}
+ .serv{grid-template-columns:1fr}
+ .galeria{grid-template-columns:1fr}
+ .dos{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="marca">ULC <span>CORPORATION</span></div>
+    <div class="idioma"><button data-l="es" class="on">ES</button><button data-l="en">EN</button></div>
+  </div>
+</header>
+<div class="cinta"><div id="cinta"></div></div>
+
+<section class="hero" style="padding:0">
+  <div class="foto"></div>
+  <div class="wrap">
+    <span class="chip" data-t="chip">ExpoCaucasia 2026 · Descuento especial</span>
+    <h1><span data-t="h1a">Aprenda</span> <em data-t="h1b">Inglés</em></h1>
+    <p data-t="hero">Método práctico, vivencial y conversacional bajo el Marco Común Europeo. Clases virtuales y presenciales para niños, jóvenes y adultos.</p>
+    <div class="botones">
+      <a class="btn rojo" href="#inscripcion" data-t="b1">Quiero mi descuento</a>
+      <a class="btn borde" href="#test" data-t="b2">Mide tu nivel en 1 minuto</a>
+      <button class="btn blanco" id="instalar" data-t="inst">Instalar app</button>
+    </div>
+  </div>
+</section>
+
+<div class="cifras">
+  <div class="wrap">
+    <div><b data-c="4">0</b><small data-t="c1">niveles A1 · A2 · B1 · B2</small></div>
+    <div><b data-c="3">0</b><small data-t="c2">sedes en la región</small></div>
+    <div><b data-c="2">0</b><small data-t="c3">modalidades: virtual y presencial</small></div>
+    <div><b data-c="100" data-s="%">0</b><small data-t="c4">garantizado</small></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="titulo rev"><span data-t="m0">Nuestro</span> <span data-t="m00">método</span></h2>
+    <p class="sub rev" data-t="msub">Aquí no se aprende inglés de memoria: se aprende usándolo.</p>
+    <div class="metodo">
+      <div class="met rev"><div class="n">01</div><h3 data-t="m1">Práctico</h3><p data-t="m1d">Desde la primera clase usa el idioma en situaciones reales: presentarse, pedir, preguntar, viajar, trabajar.</p></div>
+      <div class="met rev"><div class="n">02</div><h3 data-t="m2">Vivencial</h3><p data-t="m2d">Actividades, juegos de rol y dinámicas que hacen que lo aprendido se quede para siempre.</p></div>
+      <div class="met rev"><div class="n">03</div><h3 data-t="m3">Conversacional</h3><p data-t="m3d">Hablar es la meta. Grupos reducidos para que cada estudiante participe y pierda el miedo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="niveles-bg">
+  <div class="wrap">
+    <h2 class="titulo rev" data-t="n0">Inglés por niveles</h2>
+    <p class="sub rev" data-t="nsub">Bajo el Marco Común Europeo de Referencia. Toque cada nivel.</p>
+    <div class="tabs" id="tabs"><button class="on">A1</button><button>A2</button><button>B1</button><button>B2</button></div>
+    <div class="nivel-box" id="nivel"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="titulo rev"><span data-t="s0">Lo que</span> <span data-t="s00">ofrecemos</span></h2>
+    <p class="sub rev" data-t="ssub">Para niños, jóvenes y adultos.</p>
+    <div class="serv">
+      <div class="sv rev" data-k="A1"><h3 data-t="s1">Inglés por niveles</h3><p data-t="s1d">De A1 a B2, para niños, jóvenes y adultos.</p></div>
+      <div class="sv rev" data-k="10"><h3 data-t="s2">Grupos reducidos</h3><p data-t="s2d">Más atención para cada estudiante y más tiempo para hablar.</p></div>
+      <div class="sv rev" data-k="U"><h3 data-t="s3">Asesorías escolares y universitarias</h3><p data-t="s3d">Refuerzo para tareas, exámenes y materias de inglés del colegio y la universidad.</p></div>
+      <div class="sv rev" data-k="B2"><h3 data-t="s4">Preparación para pruebas internacionales</h3><p data-t="s4d">Prepárese para los exámenes que le piden para estudiar, trabajar o viajar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="titulo rev"><span data-t="mo0">¿Cómo quiere</span> <span data-t="mo00">estudiar?</span></h2>
+    <p class="sub rev" data-t="mosub">Escoja la modalidad que mejor se acomode a su tiempo.</p>
+    <div class="modal-sw" id="modsw"><button class="on" data-m="p" data-t="mp">Presencial</button><button data-m="v" data-t="mv">Virtual</button></div>
+    <div class="modal-txt" id="modtxt"></div>
+  </div>
+</section>
+
+<section class="test" id="test">
+  <div class="wrap">
+    <h2 class="titulo rev"><span data-t="t0">Mida su</span> <span data-t="t00">nivel</span></h2>
+    <p class="sub rev" data-t="tsub">Seis preguntas rápidas para saber por dónde empezar. Es orientativo: en ULC le hacen la prueba completa.</p>
+    <div class="card-test" id="cardtest"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap galeria">
+    <div>
+      <h2 class="titulo rev"><span data-t="g0">Hable inglés</span> <span data-t="g00">con confianza</span></h2>
+      <p class="sub rev" data-t="gsub">Únase a los estudiantes de Caucasia, El Bagre y Montelíbano que ya están aprendiendo con ULC Corporation, the best choice to learn English.</p>
+      <a class="btn rojo rev" href="#inscripcion" data-t="b1">Quiero mi descuento</a>
+    </div>
+    <img class="volante rev" src="volante.jpg" alt="Volante de ULC Corporation" loading="lazy">
+  </div>
+</section>
+
+<section class="test" id="inscripcion">
+  <div class="wrap">
+    <h2 class="titulo rev"><span data-t="f0">Reserve su</span> <span data-t="f00">cupo</span></h2>
+    <p class="sub rev" data-t="fsub">Llene sus datos y le escribe Carlos por WhatsApp con el descuento especial de la feria.</p>
+    <form class="form" id="form">
+      <div><label data-t="fl1">Nombre completo</label><input id="fn" required></div>
+      <div class="dos">
+        <div><label data-t="fl2">Celular / WhatsApp</label><input id="ft" type="tel" required inputmode="tel"></div>
+        <div><label data-t="fl3">¿Para quién es?</label>
+          <select id="fq"><option data-t="q1">Para mí (adulto)</option><option data-t="q2">Para mi hijo(a) niño</option><option data-t="q3">Para un joven</option><option data-t="q4">Asesoría escolar / universitaria</option><option data-t="q5">Prueba internacional</option></select></div>
+      </div>
+      <div class="dos">
+        <div><label data-t="fl4">Sede</label><select id="fs"><option>Caucasia</option><option>El Bagre</option><option>Montelíbano</option></select></div>
+        <div><label data-t="fl5">Modalidad</label><select id="fm"><option data-t="mp">Presencial</option><option data-t="mv">Virtual</option></select></div>
+      </div>
+      <div><label data-t="fl6">Nivel (si hizo el test)</label><input id="fnv" readonly placeholder="—"></div>
+      <p class="habeas"><label style="color:#555;font-weight:400"><input type="checkbox" id="fh" required><span data-t="habeas">Autorizo a ULC Corporation a usar mis datos solo para contactarme sobre sus cursos, conforme a la Ley 1581 de 2012 (Habeas Data). Esta app no guarda sus datos: se envían directo por WhatsApp.</span></label></p>
+      <button class="btn rojo" type="submit" data-t="fenv">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="titulo rev"><span data-t="se0">Nuestras</span> <span data-t="se00">sedes</span></h2>
+    <p class="sub rev" data-t="sesub">Visítenos o escríbanos directo a la sede más cercana.</p>
+    <div class="sedes">
+      <div class="sede rev"><h3>Caucasia</h3><p>Calle 23 # 5 - 42 B/. Kennedy<br>Tel: 604-8149233</p><a class="btn rojo" href="https://wa.me/573106562390?text=Hola%20ULC%2C%20quiero%20informaci%C3%B3n%20de%20los%20cursos%20de%20ingl%C3%A9s" target="_blank">WhatsApp 310 656 2390</a></div>
+      <div class="sede rev"><h3>El Bagre</h3><p data-t="bagre">Barrio La Floresta<br>Colegio Interamericano</p><a class="btn rojo" href="https://wa.me/573148913414?text=Hola%20ULC%2C%20quiero%20informaci%C3%B3n%20de%20los%20cursos%20de%20ingl%C3%A9s" target="_blank">WhatsApp 314 891 3414</a></div>
+      <div class="sede rev"><h3>Montelíbano</h3><p>Calle 17A # 8 - 85<br>Barrio San Luis</p><a class="btn rojo" href="https://wa.me/573013925782?text=Hola%20ULC%2C%20quiero%20informaci%C3%B3n%20de%20los%20cursos%20de%20ingl%C3%A9s" target="_blank">WhatsApp 301 392 5782</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2 class="titulo" data-t="cta">Llame ya y reciba descuento especial</h2>
+    <p class="sub" style="color:#ffe3e5;margin:12px auto 22px" data-t="ctasub">Pregunte por Carlos</p>
+    <div class="botones" style="justify-content:center">
+      <a class="btn blanco" href="tel:+573116048501" data-t="llamar">Llamar a Carlos 311 604 8501</a>
+      <a class="btn borde" id="waCarlos" target="_blank" data-t="wa">Escribir por WhatsApp</a>
+    </div>
+    <p class="reloj" id="reloj"></p>
+  </div>
+</section>
+
+<footer>
+  <p><b>ULC Corporation</b> — The best choice to learn English</p>
+  <p style="margin-top:10px">Desarrollada por <b>Vibras Positivas HM</b> — Derechos de Autor Reservados · 311 770 0431</p>
+</footer>
+
+<a class="flotante" id="flota" target="_blank">WhatsApp</a>
+
+<script>
+const CARLOS='573116048501';
+const T={
+es:{cinta:'DESCUENTO ESPECIAL EXPOCAUCASIA 2026 · INGLÉS A1 · A2 · B1 · B2 · CLASES VIRTUALES Y PRESENCIALES · GRUPOS REDUCIDOS · PREGUNTE POR CARLOS 311 604 8501 · ',
+abierto:'Atendiendo ahora',cerrado:'Escríbanos, le respondemos pronto',
+reloj:'Hora Colombia: ',
+lev:[
+['A1 · Principiante','Para quien empieza de cero.',['Saludar, presentarse y hablar de su familia','Números, fechas, horas y precios','Pedir comida y preguntar direcciones','Frases para el día a día'],25],
+['A2 · Básico','Para defenderse en situaciones cotidianas.',['Hablar del pasado y de planes','Compras, viajes y citas','Describir personas, lugares y rutinas','Escribir mensajes y correos cortos'],50],
+['B1 · Intermedio','Para conversar con más soltura.',['Dar opiniones y explicar razones','Entender conversaciones y videos claros','Manejar situaciones de viaje y trabajo','Contar experiencias con detalle'],75],
+['B2 · Intermedio alto','Para estudiar, trabajar o viajar con confianza.',['Conversar con fluidez con nativos','Entender textos y charlas complejas','Escribir textos claros y detallados','Base para pruebas internacionales'],100]],
+mod:{p:'Clases presenciales en nuestras sedes de Caucasia, El Bagre y Montelíbano, en grupos reducidos y con el profesor al lado para practicar la conversación cara a cara.',v:'Clases virtuales en vivo desde su celular o computador: el mismo método práctico y conversacional, sin desplazarse y desde cualquier lugar.'},
+test:[
+['"Hello, my name ___ Ana."',['is','are','am'],0],
+['¿Cómo se dice "Tengo 20 años"?',['I have 20 years','I am 20 years old','I am 20 years'],1],
+['"Yesterday I ___ to the market."',['go','goes','went'],2],
+['"If it rains, we ___ at home."',['will stay','would stayed','stays'],0],
+['"I have lived here ___ 2015."',['for','since','from'],1],
+['"I wish I ___ more time to study."',['have','had','will have'],1]],
+pq:'Pregunta',de:'de',res:'Su nivel sugerido es',reg:'Reservar con este nivel',otra:'Repetir test',
+r:['Arranque en A1: empezará desde las bases y avanzará rápido.','Arranque en A1/A2: ya tiene bases, ahora a soltarse.','Nivel A2: se defiende; en ULC lo lleva a conversar.','Nivel B1: buen camino; vaya por la fluidez.','Nivel B1/B2: muy bien. Prepárese para el siguiente paso.','Nivel B2: excelente. Pregunte por las pruebas internacionales.','Nivel B2: excelente. Pregunte por las pruebas internacionales.'],
+msg:'Hola Carlos, vi la app de ULC en ExpoCaucasia y quiero el descuento especial.',
+wa:'Escribir por WhatsApp',flota:'WhatsApp',inst:'Instalar app'},
+en:{cinta:'EXPOCAUCASIA 2026 SPECIAL DISCOUNT · ENGLISH A1 · A2 · B1 · B2 · ONLINE AND IN-PERSON CLASSES · SMALL GROUPS · ASK FOR CARLOS 311 604 8501 · ',
+abierto:'Open now',cerrado:'Message us, we reply soon',
+reloj:'Colombia time: ',
+lev:[
+['A1 · Beginner','For those starting from zero.',['Greet people, introduce yourself and talk about family','Numbers, dates, times and prices','Order food and ask for directions','Everyday phrases'],25],
+['A2 · Elementary','To get by in everyday situations.',['Talk about the past and future plans','Shopping, travel and appointments','Describe people, places and routines','Write short messages and emails'],50],
+['B1 · Intermediate','To hold conversations with ease.',['Give opinions and explain reasons','Understand clear conversations and videos','Handle travel and work situations','Tell experiences in detail'],75],
+['B2 · Upper intermediate','To study, work or travel with confidence.',['Speak fluently with native speakers','Understand complex texts and talks','Write clear, detailed texts','Foundation for international exams'],100]],
+mod:{p:'In-person classes at our Caucasia, El Bagre and Montelíbano branches, in small groups, with the teacher right there to practice face-to-face conversation.',v:'Live online classes from your phone or computer: the same practical, conversational method, from anywhere.'},
+test:[
+['"Hello, my name ___ Ana."',['is','are','am'],0],
+['How do you say "Tengo 20 años"?',['I have 20 years','I am 20 years old','I am 20 years'],1],
+['"Yesterday I ___ to the market."',['go','goes','went'],2],
+['"If it rains, we ___ at home."',['will stay','would stayed','stays'],0],
+['"I have lived here ___ 2015."',['for','since','from'],1],
+['"I wish I ___ more time to study."',['have','had','will have'],1]],
+pq:'Question',de:'of',res:'Your suggested level is',reg:'Book with this level',otra:'Retake test',
+r:['Start at A1: you will build the basics and move fast.','Start at A1/A2: you have the basics, now let\'s get you speaking.','A2 level: you get by; ULC will get you talking.','B1 level: good path; go for fluency.','B1/B2 level: very good. Get ready for the next step.','B2 level: excellent. Ask about international exams.','B2 level: excellent. Ask about international exams.'],
+msg:'Hi Carlos, I saw the ULC app at ExpoCaucasia and I want the special discount.',
+wa:'Message on WhatsApp',flota:'WhatsApp',inst:'Install app'}};
+const EN={chip:'ExpoCaucasia 2026 · Special discount',h1a:'Learn',h1b:'English',hero:'Practical, experiential and conversational method based on the Common European Framework. Online and in-person classes for children, teens and adults.',b1:'Get my discount',b2:'Test your level in 1 minute',inst:'Install app',c1:'levels A1 · A2 · B1 · B2',c2:'branches in the region',c3:'formats: online and in-person',c4:'guaranteed',m0:'Our',m00:'method',msub:'Here you don\'t memorize English: you learn it by using it.',m1:'Practical',m1d:'From day one you use the language in real situations: introducing yourself, ordering, asking, traveling, working.',m2:'Experiential',m2d:'Activities, role-plays and dynamics that make what you learn stick forever.',m3:'Conversational',m3d:'Speaking is the goal. Small groups so every student takes part and loses the fear.',n0:'English by levels',nsub:'Based on the Common European Framework of Reference. Tap each level.',s0:'What we',s00:'offer',ssub:'For children, teens and adults.',s1:'English by levels',s1d:'From A1 to B2, for children, teens and adults.',s2:'Small groups',s2d:'More attention for each student and more time to speak.',s3:'School and university tutoring',s3d:'Support for English homework, exams and courses at school and university.',s4:'International exam preparation',s4d:'Get ready for the exams you need to study, work or travel.',mo0:'How do you want',mo00:'to study?',mosub:'Choose the format that best fits your time.',mp:'In-person',mv:'Online',t0:'Test your',t00:'level',tsub:'Six quick questions to know where to start. It\'s a guide: ULC will give you the full test.',g0:'Speak English',g00:'with confidence',gsub:'Join the students in Caucasia, El Bagre and Montelíbano already learning with ULC Corporation, the best choice to learn English.',f0:'Book your',f00:'spot',fsub:'Fill in your details and Carlos will message you on WhatsApp with the special fair discount.',fl1:'Full name',fl2:'Mobile / WhatsApp',fl3:'Who is it for?',q1:'For me (adult)',q2:'For my child',q3:'For a teenager',q4:'School / university tutoring',q5:'International exam',fl4:'Branch',fl5:'Format',fl6:'Level (if you took the test)',habeas:'I authorize ULC Corporation to use my data only to contact me about its courses, under Colombian Law 1581 of 2012 (Habeas Data). This app does not store your data: it is sent directly via WhatsApp.',fenv:'Send via WhatsApp',se0:'Our',se00:'branches',sesub:'Visit us or message the nearest branch directly.',bagre:'La Floresta neighborhood<br>Colegio Interamericano',cta:'Call now and get a special discount',ctasub:'Ask for Carlos',llamar:'Call Carlos 311 604 8501',wa:'Message on WhatsApp'};
+const ES={};document.querySelectorAll('[data-t]').forEach(e=>{ES[e.dataset.t]=e.innerHTML});
+let L=localStorage.getItem('ulc-l')||'es',nv=0,mod='p';
+function aplicar(){
+  document.documentElement.lang=L;
+  document.querySelectorAll('[data-t]').forEach(e=>{const k=e.dataset.t;e.innerHTML=(L==='en'?EN[k]:ES[k])??ES[k]});
+  document.querySelectorAll('.idioma button').forEach(b=>b.classList.toggle('on',b.dataset.l===L));
+  document.getElementById('cinta').textContent=T[L].cinta.repeat(4);
+  pintaNivel();pintaMod();estados();
+  const u='https://wa.me/'+CARLOS+'?text='+encodeURIComponent(T[L].msg);
+  document.getElementById('waCarlos').href=u;document.getElementById('flota').href=u;
+  if(!enTest)testInicio();
+}
+document.querySelectorAll('.idioma button').forEach(b=>b.onclick=()=>{L=b.dataset.l;try{localStorage.setItem('ulc-l',L)}catch(e){}enTest=false;aplicar()});
+// niveles
+const tabs=[...document.querySelectorAll('#tabs button')];
+tabs.forEach((b,i)=>b.onclick=()=>{nv=i;tabs.forEach(x=>x.classList.remove('on'));b.classList.add('on');pintaNivel()});
+function pintaNivel(){const d=T[L].lev[nv];const box=document.getElementById('nivel');
+  box.innerHTML=`<h3>${d[0]}</h3><p>${d[1]}</p><div class="barra"><i style="width:0"></i></div><ul>${d[2].map(x=>`<li>${x}</li>`).join('')}</ul>`;
+  requestAnimationFrame(()=>setTimeout(()=>box.querySelector('i').style.width=d[3]+'%',40));}
+// modalidad
+document.querySelectorAll('#modsw button').forEach(b=>b.onclick=()=>{mod=b.dataset.m;document.querySelectorAll('#modsw button').forEach(x=>x.classList.toggle('on',x===b));pintaMod()});
+function pintaMod(){const t=document.getElementById('modtxt');t.style.opacity=0;setTimeout(()=>{t.textContent=T[L].mod[mod];t.style.transition='opacity .4s';t.style.opacity=1},150)}
+// test
+let q=0,pts=0,enTest=false;const card=document.getElementById('cardtest');
+function testInicio(){q=0;pts=0;pinta()}
+function pinta(){const P=T[L].test;
+  if(q>=P.length){const niv=['A1','A1','A2','B1','B1','B2','B2'][pts];
+    card.innerHTML=`<div class="resultado"><p>${T[L].res}</p><div class="big">${niv}</div><p style="margin:10px 0 20px">${T[L].r[pts]} (${pts}/6)</p><div class="botones" style="justify-content:center"><a class="btn rojo" href="#inscripcion" id="regniv">${T[L].reg}</a><button class="btn" style="background:var(--gris);color:var(--azul)" id="otra">${T[L].otra}</button></div></div>`;
+    document.getElementById('fnv').value=niv;
+    document.getElementById('otra').onclick=()=>{enTest=true;testInicio()};return}
+  const p=P[q];
+  card.innerHTML=`<div class="prog"><i style="width:${q/P.length*100}%"></i></div><p style="font-size:13px;color:#777">${T[L].pq} ${q+1} ${T[L].de} ${P.length}</p><div class="preg">${p[0]}</div><div class="ops">${p[1].map((o,i)=>`<button data-i="${i}">${o}</button>`).join('')}</div>`;
+  card.querySelectorAll('.ops button').forEach(b=>b.onclick=()=>{enTest=true;const i=+b.dataset.i;
+    card.querySelectorAll('.ops button').forEach(x=>x.disabled=true);
+    b.classList.add(i===p[2]?'ok':'mal');if(i!==p[2])card.querySelectorAll('.ops button')[p[2]].classList.add('ok');else pts++;
+    setTimeout(()=>{q++;pinta()},800)});
+}
+// formulario
+document.getElementById('form').onsubmit=e=>{e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const sel=id=>{const s=document.getElementById(id);return s.options[s.selectedIndex].text};
+  const m=(L==='en'?'Hi Carlos, I want to book my spot at ULC with the ExpoCaucasia discount.':'Hola Carlos, quiero reservar mi cupo en ULC con el descuento de ExpoCaucasia.')+
+  `\n\n${L==='en'?'Name':'Nombre'}: ${v('fn')}\nWhatsApp: ${v('ft')}\n${L==='en'?'For':'Para'}: ${sel('fq')}\n${L==='en'?'Branch':'Sede'}: ${sel('fs')}\n${L==='en'?'Format':'Modalidad'}: ${sel('fm')}`+(v('fnv')?`\n${L==='en'?'Test level':'Nivel del test'}: ${v('fnv')}`:'');
+  const u='https://wa.me/'+CARLOS+'?text='+encodeURIComponent(m);
+  let a=document.getElementById('waFin');if(!a){a=document.createElement('a');a.id='waFin';a.className='btn rojo';a.target='_blank';a.style.background='#25d366';e.target.appendChild(a)}
+  a.href=u;a.textContent=L==='en'?'Tap here to open WhatsApp and send':'Toque aquí para abrir WhatsApp y enviar';a.scrollIntoView({behavior:'smooth',block:'center'});
+  try{window.open(u,'_blank')}catch(x){}};
+// hora Colombia y estado de sedes (horario de referencia lun-sáb 8 a 18)
+function horaCo(){return new Date(new Date().toLocaleString('en-US',{timeZone:'America/Bogota'}))}
+function estados(){}
+function reloj(){document.getElementById('reloj').textContent=T[L].reloj+new Date().toLocaleString(L==='en'?'en-US':'es-CO',{timeZone:'America/Bogota',weekday:'long',hour:'2-digit',minute:'2-digit',second:'2-digit'})}
+setInterval(reloj,1000);setInterval(estados,60000);
+// contadores y aparición
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;const el=en.target;el.classList.add('vis');
+  if(el.dataset.c){const fin=+el.dataset.c,s=el.dataset.s||'';let t0=null;const f=t=>{t0=t0||t;const k=Math.min((t-t0)/1200,1);el.textContent=Math.round(fin*k)+s;if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+  io.unobserve(el)}),{threshold:.2});
+document.querySelectorAll('.rev,[data-c]').forEach(e=>io.observe(e));
+// PWA
+let dp;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e;document.getElementById('instalar').style.display='inline-block'});
+document.getElementById('instalar').onclick=async()=>{if(!dp)return;dp.prompt();await dp.userChoice;dp=null;document.getElementById('instalar').style.display='none'};
+try{if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){}
+aplicar();reloj();
+</script>
+</body>
+</html>
